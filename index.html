@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой CDN проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Привет из CDN!</h1>
+        <p>Этот сайт доставляется через Cloudflare CDN</p>
+        <img src="image.jpg" alt="Моё изображение">
+        <p class="info">Дата создания: <span id="date"></span></p>
+    </div>
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('ru-RU');
+    </script>
+</body>
+</html>
